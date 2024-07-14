@@ -1,6 +1,8 @@
 import React from "react";
-import { defaultState, LanguageContext, LanguageState } from "./context";
-import { Language, setPreferredLanguage } from "../../utils/language";
+
+import { Language, setPreferredLanguage } from "@utils/language";
+
+import { LanguageContext, LanguageState, defaultState } from "./context";
 
 interface SetLanguageAction {
   type: "set";

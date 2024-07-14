@@ -3,7 +3,7 @@ interface HeroProps {
   subtitle?: string;
 }
 
-function Hero({ title, subtitle }: HeroProps) {
+export function Hero({ title, subtitle }: HeroProps) {
   return (
     <div className="h-[100svh] w-full flex flex-col justify-center items-center">
       <h1 className="text-brand text-jumbo">{title}</h1>
@@ -11,5 +11,3 @@ function Hero({ title, subtitle }: HeroProps) {
     </div>
   );
 }
-
-export { Hero };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Language, getPreferredLanguage } from "../../utils/language";
+import { Language, getPreferredLanguage } from "@utils/language";
 
 export interface LanguageState {
   language: Language;
