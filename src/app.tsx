@@ -1,6 +1,7 @@
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Footer } from "./components/Footer";
+import { About } from "@components/About";
+import { Header } from "@components/Header";
+import { Hero } from "@components/Hero";
+import { Footer } from "@components/Footer";
 import { Providers } from "@components/Providers";
 
 import "./styles/globals.css";
@@ -8,10 +9,11 @@ import "./styles/globals.css";
 function App() {
   return (
     <Providers>
-      <div className="h-full w-full flex flex-col justify-center items-center gap-4 px-4 max-w-4xl mx-auto">
+      <div className="h-full w-full flex flex-col justify-center items-center gap-4 px-4 max-w-6xl mx-auto">
         <Header />
-        <main className="">
+        <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />
+          <About />
         </main>
         <Footer />
       </div>
