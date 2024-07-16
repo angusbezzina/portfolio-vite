@@ -1,7 +1,8 @@
 export function separateFirst(input: string) {
-  const words = input.split(" ");
+  const usePeriod = input.includes(".");
+  const words = usePeriod ? input.split(".") : input.split(" ");
   const first = words.shift();
-  const remaining = words.join(" ");
+  const remaining = usePeriod ? `.${words.join(".")}` : words.join(" ");
 
   return {
     first,
@@ -9,9 +10,10 @@ export function separateFirst(input: string) {
   };
 }
 export function separateLast(input: string) {
-  const words = input.split(" ");
+  const usePeriod = input.includes(".");
+  const words = usePeriod ? input.split(".") : input.split(" ");
   const last = words.pop();
-  const remaining = words.join(" ");
+  const remaining = usePeriod ? `${words.join(".")}.` : words.join(" ");
 
   return {
     last,

@@ -2,6 +2,7 @@ import { About } from "@components/About";
 import { Header } from "@components/Header";
 import { Hero } from "@components/Hero";
 import { Footer } from "@components/Footer";
+import { Projects } from "@components/Projects";
 import { Providers } from "@components/Providers";
 
 import "./styles/globals.css";
@@ -14,6 +15,7 @@ function App() {
         <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />
           <About />
+          <Projects />
         </main>
         <Footer />
       </div>

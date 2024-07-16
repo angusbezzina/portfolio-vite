@@ -16,7 +16,7 @@ export function About() {
   const skills = BIO[language].skills;
 
   return (
-    <div className="w-full h-full flex flex-col md:flex-row items-stretch justify-start gap-4">
+    <div className="w-full min-h-[50svh] h-full flex flex-col md:flex-row items-center justify-start gap-4">
       <div className="w-full md:w-1/2 flex flex-col gap-3 p-8">
         <Sparkle size={64} />
         <h3 className="text-brand text-h2">
@@ -29,7 +29,7 @@ export function About() {
         <p className="text-foreground/80 leading-8">{text}</p>
       </div>
       {skills && (
-        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-8">
+        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-16">
           {skills.map((skill) => (
             <div className="flex flex-col gap-2" key={skill.title}>
               <h4 className="text-large">{skill.title}</h4>
