@@ -1,4 +1,5 @@
 import { About } from "@components/About";
+import { Experiments } from "@components/Experiments";
 import { Header } from "@components/Header";
 import { Hero } from "@components/Hero";
 import { Footer } from "@components/Footer";
@@ -16,6 +17,7 @@ function App() {
           <Hero title="TBD - Feature graphic" />
           <About />
           <Projects />
+          <Experiments />
         </main>
         <Footer />
       </div>
