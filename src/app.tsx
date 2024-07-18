@@ -12,7 +12,7 @@ import "./styles/globals.css";
 function App() {
   return (
     <Providers>
-      <div className="h-full w-full flex flex-col justify-center items-center gap-4 md:px-4 max-w-6xl mx-auto">
+      <div className="h-full w-full flex flex-col justify-center items-center gap-4 md:px-8 max-w-6xl mx-auto">
         <Header />
         <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />

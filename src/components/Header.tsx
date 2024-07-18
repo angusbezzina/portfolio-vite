@@ -21,7 +21,7 @@ export function Header({}: HeaderProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-30 bg-background flex justify-between gap-4 p-2",
+        "fixed top-0 left-0 w-full z-30 bg-background flex justify-between gap-4 p-2 md:px-8",
         scrollPosition > 10 && "shadow-md",
       )}
     >
