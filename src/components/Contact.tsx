@@ -13,7 +13,7 @@ export function Contact() {
 
   return (
     <div className="relative w-full h-full flex flex-col md:flex-row items-start justify-center gap-8 p-8 text-foreground/80">
-      <div className="w-full md:w-1/3 flex flex-col gap-3">
+      <div className="w-full md:w-5/12 flex flex-col gap-3">
         <div className="flex flex-col gap-3">
           <PaperPlaneTilt size={64} />
           <h3 className="text-h2 text-brand">
@@ -38,7 +38,7 @@ export function Contact() {
           </a>
         </div>
       </div>
-      <div className="w-full md:w-2/3 flex flex-col gap-3">
+      <div className="w-full md:w-7/12 flex flex-col gap-3">
         <ContactForm />
       </div>
     </div>
