@@ -16,7 +16,7 @@ export function About() {
   const skills = BIO[language].skills;
 
   return (
-    <div className="w-full min-h-[50svh] h-full flex flex-col md:flex-row items-center justify-start gap-4">
+    <div className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4">
       <div className="w-full md:w-1/2 flex flex-col gap-3 p-8">
         <Sparkle size={64} />
         <h3 className="text-brand text-h2">

@@ -1,4 +1,5 @@
 import { About } from "@components/About";
+import { Contact } from "@components/Contact";
 import { Experiments } from "@components/Experiments";
 import { Header } from "@components/Header";
 import { Hero } from "@components/Hero";
@@ -15,12 +16,15 @@ function App() {
         <Header />
         <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />
-          <About />
-          <Projects />
-          <Experiments />
+          <div className="w-full h-full flex flex-col justify-start items-start space-y-24 md:space-y-36">
+            <About />
+            <Projects />
+            <Experiments />
+            <Contact />
+          </div>
         </main>
-        <Footer />
       </div>
+      <Footer />
     </Providers>
   );
 }

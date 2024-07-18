@@ -13,7 +13,7 @@ export function Projects() {
   const caseStudies = PROJECTS.projects;
 
   return (
-    <div className="relative w-full min-h-[75svh] h-full flex flex-col items-start justify-center gap-8 p-8 text-foreground/80">
+    <div className="relative w-full h-full flex flex-col items-start justify-center gap-8 p-8 text-foreground/80">
       <div className="flex flex-col gap-3">
         <Briefcase size={64} />
         <h3 className="text-h2">
