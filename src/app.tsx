@@ -12,11 +12,11 @@ import "./styles/globals.css";
 function App() {
   return (
     <Providers>
-      <div className="h-full w-full flex flex-col justify-center items-center gap-4 px-4 max-w-6xl mx-auto">
+      <div className="h-full w-full flex flex-col justify-center items-center gap-4 md:px-4 max-w-6xl mx-auto">
         <Header />
         <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />
-          <div className="w-full h-full flex flex-col justify-start items-start space-y-24 md:space-y-36">
+          <div className="w-full h-full flex flex-col justify-start items-start space-y-16 md:space-y-36">
             <About />
             <Projects />
             <Experiments />

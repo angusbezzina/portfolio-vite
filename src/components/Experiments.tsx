@@ -43,15 +43,6 @@ export function Experiments() {
               return (
                 <CarouselItem key={slug}>
                   <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-full min-h-[33svh] md:w-1/2 gap-3 flex items-center bg-white/80 justify-center object-cover object-center rounded-lg overflow-hidden shadow-lg">
-                      {featureImageSrc ? (
-                        <img src={featureImageSrc} alt={featureImageAlt} />
-                      ) : (
-                        <h2 className="text-h2">
-                          Coming Soon<span className="text-brand">.</span>
-                        </h2>
-                      )}
-                    </div>
                     <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-3">
                       <h4 className="text-h4">
                         {remaining.length > 0 ? (
@@ -83,6 +74,15 @@ export function Experiments() {
                       >
                         {language === "english" ? "See the project" : "Ver el proyecto"}
                       </a>
+                    </div>
+                    <div className="w-full min-h-[33svh] md:w-1/2 gap-3 flex items-center bg-white/80 justify-center object-cover object-center rounded-lg overflow-hidden shadow-lg">
+                      {featureImageSrc ? (
+                        <img src={featureImageSrc} alt={featureImageAlt} />
+                      ) : (
+                        <h2 className="text-h2">
+                          Coming Soon<span className="text-brand">.</span>
+                        </h2>
+                      )}
                     </div>
                   </div>
                 </CarouselItem>

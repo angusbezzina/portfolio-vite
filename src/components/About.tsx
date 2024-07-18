@@ -29,7 +29,7 @@ export function About() {
         <p className="text-foreground/80 leading-8">{text}</p>
       </div>
       {skills && (
-        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-16">
+        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-8 md:p-16">
           {skills.map((skill) => (
             <div className="flex flex-col gap-2" key={skill.title}>
               <h4 className="text-large">{skill.title}</h4>
