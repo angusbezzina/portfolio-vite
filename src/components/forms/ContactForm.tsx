@@ -31,8 +31,14 @@ export function ContactForm() {
     resolver: zodResolver(ContactFormSchema),
   });
 
+  const {
+    reset,
+    formState: { isValid, isDirty },
+  } = form;
+
   function onSubmit(values: ContactFormFields) {
     console.log("VALUES", values);
+    form.reset();
   }
 
   return (
@@ -86,7 +92,9 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button disabled={!isValid || !isDirty} type="submit">
+          Submit
+        </Button>
       </form>
     </Form>
   );
