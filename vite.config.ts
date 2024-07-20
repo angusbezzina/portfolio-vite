@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
@@ -5,6 +6,11 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    include: ["./src/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -15,6 +21,7 @@ export default defineConfig({
       "@lib": path.resolve(__dirname, "./src/lib"),
       "@hooks": path.resolve(__dirname, "./src/utils/hooks"),
       "@data": path.resolve(__dirname, "./src/data"),
+      "@api": path.resolve(__dirname, "./src/api"),
     },
   },
 });

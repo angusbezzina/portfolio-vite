@@ -268,10 +268,36 @@ export const CONTACT_DETAILS = {
   english: {
     preTitle: "Want to work with me?",
     title: "Get in touch",
+    labels: {
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      submit: "Send",
+      responseSuccess: `Thanks for your message {{name}}! I'll be in touch soon 😁`,
+      responseFailure: `I'm sorry {{name}}, it looks like something has gone wrong 😔`,
+    },
+    placeholders: {
+      name: "Jane Doe",
+      email: "hi@jane.com",
+      message: "Hi, my name is Jane...",
+    },
   },
   spanish: {
     preTitle: "¿Quieres trabajar conmigo?",
     title: "Poner en contacto",
+    labels: {
+      name: "Nombre",
+      email: "Correo",
+      message: "Mensaje",
+      submit: "Enviar",
+      responseSuccess: `Gracias por tu mensaje {{name}}! Se responderé lo antes posible 😁`,
+      responseFailure: `Lo siento {{name}}, parece como algo ha pasado malo 😔`,
+    },
+    placeholders: {
+      name: "Yessica Perez",
+      email: "hola@yessica.com",
+      message: "Hola, mi nombre es Yessica...",
+    },
   },
   email: "angusbezzina@gmail.com",
   phone: "+(1) 857 445 1198",

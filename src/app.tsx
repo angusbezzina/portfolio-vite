@@ -16,7 +16,7 @@ function App() {
         <Header />
         <main className="h-full w-full bg-secondary">
           <Hero title="TBD - Feature graphic" />
-          <div className="w-full h-full flex flex-col justify-start items-start space-y-16 md:space-y-36">
+          <div className="w-full h-full flex flex-col justify-start items-start space-y-12 md:space-y-24">
             <About />
             <Projects />
             <Experiments />

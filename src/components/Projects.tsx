@@ -13,8 +13,8 @@ export function Projects() {
   const caseStudies = PROJECTS.projects;
 
   return (
-    <div className="relative w-full h-full flex flex-col items-start justify-center gap-8 p-8 text-foreground/80">
-      <div className="flex flex-col gap-3">
+    <div className="relative w-full md:h-full flex flex-col items-start justify-center gap-8 text-foreground/80">
+      <div className="flex flex-col gap-3 p-4 md:p-8">
         <Briefcase size={64} />
         <h3 className="text-h2">
           {title}
@@ -42,14 +42,20 @@ export function Projects() {
 
               return (
                 <CarouselItem key={slug}>
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-full min-h-[33svh] md:w-1/2 gap-3 flex items-center bg-white/80 justify-center object-cover object-center rounded-lg overflow-hidden shadow-lg">
+                  <div className="flex flex-col md:flex-row gap-8 items-center p-4 md:p-8">
+                    <div className="w-full md:w-1/2 gap-3 flex items-center justify-center">
                       {featureImageSrc ? (
-                        <img src={featureImageSrc} alt={featureImageAlt} />
+                        <img
+                          src={featureImageSrc}
+                          alt={featureImageAlt}
+                          className="h-full w-full min-h-52 md:min-h-[33svh] object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
+                        />
                       ) : (
-                        <h2 className="text-h2">
-                          Coming Soon<span className="text-brand">.</span>
-                        </h2>
+                        <div className="flex justify-center items-center h-full w-full min-h-52 md:min-h-[33svh] rounded-lg overflow-hidden shadow-lg bg-white/80">
+                          <h2 className="text-h2">
+                            Coming Soon<span className="text-brand">.</span>
+                          </h2>
+                        </div>
                       )}
                     </div>
                     <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-3">
