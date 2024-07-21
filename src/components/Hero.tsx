@@ -1,5 +1,6 @@
 import { useLanguage } from "@context/language";
 import { LINKS, WELCOME } from "@data/information";
+import { cn } from "@lib/utils";
 import { ArrowDown } from "@phosphor-icons/react";
 import useScrollPosition from "@utils/hooks/useScrollPosition";
 
@@ -25,16 +26,17 @@ export function Hero() {
           <span className="text-foreground">.</span>
         </h1>
       </div>
-      {scrollPosition < 50 && (
-        <button
-          type="button"
-          onClick={handleScroll}
-          className="outline-none absolute font-bold text-brand bottom-4 flex flex-col items-center justify-center gap-2 left-auto right-auto"
-        >
-          {LINKS[language].explore}
-          <ArrowDown weight="bold" className="animate-bounce infinite" />
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={handleScroll}
+        className={cn(
+          "outline-none absolute font-bold text-brand bottom-4 flex flex-col items-center justify-center gap-2 left-auto right-auto transition-opacity",
+          scrollPosition < 50 ? "opacity-100" : "opacity-0",
+        )}
+      >
+        {LINKS[language].explore}
+        <ArrowDown weight="bold" className="animate-bounce infinite text-foreground" />
+      </button>
     </div>
   );
 }
