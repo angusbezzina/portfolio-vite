@@ -82,10 +82,10 @@ export function Experiments() {
                         <img
                           src={featureImageSrc}
                           alt={featureImageAlt}
-                          className="h-full min-h-52 md:min-h-[33svh] w-full object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
+                          className="h-full min-h-52 md:min-h-[33svh] xl:min-h-72 w-full object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
                         />
                       ) : (
-                        <div className="h-full min-h-52 md:min-h-[33svh] w-full flex items-center justify-center bg-foreground rounded-lg shadow-lg">
+                        <div className="h-full min-h-52 md:min-h-[33svh] xl:min-h-72 w-full flex items-center justify-center bg-foreground rounded-lg shadow-lg">
                           <h2 className="text-background text-h2">
                             Coming Soon<span className="text-brand">.</span>
                           </h2>

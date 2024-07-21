@@ -50,10 +50,10 @@ export function Projects() {
                         <img
                           src={featureImageSrc}
                           alt={featureImageAlt}
-                          className="h-full w-full min-h-52 md:min-h-[33svh] object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
+                          className="h-full w-full min-h-52 md:min-h-[33svh] xl:min-h-72 object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
                         />
                       ) : (
-                        <div className="flex justify-center items-center h-full w-full min-h-52 md:min-h-[33svh] rounded-lg overflow-hidden shadow-lg bg-foreground">
+                        <div className="flex justify-center items-center h-full w-full min-h-52 md:min-h-[33svh] xl:min-h-72 rounded-lg overflow-hidden shadow-lg bg-foreground">
                           <h2 className="text-background text-h2">
                             Coming Soon<span className="text-brand">.</span>
                           </h2>
