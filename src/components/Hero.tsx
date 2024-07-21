@@ -20,7 +20,10 @@ export function Hero() {
   return (
     <div className="relative h-[100svh] w-full flex flex-row justify-center items-center p-4 md:p-8">
       <div className="w-full flex flex-col text-center justify-center items-center">
-        <h1 className="text-brand text-jumbo font-bold">{WELCOME[language].title}</h1>
+        <h1 className="text-brand text-jumbo font-bold">
+          {WELCOME[language].title}
+          <span className="text-foreground">.</span>
+        </h1>
       </div>
       {scrollPosition < 50 && (
         <button

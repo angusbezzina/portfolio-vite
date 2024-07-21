@@ -85,8 +85,8 @@ export function Experiments() {
                           className="h-full min-h-52 md:min-h-[33svh] w-full object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
                         />
                       ) : (
-                        <div className="h-full min-h-52 md:min-h-[33svh] w-full flex items-center justify-center bg-white/80 rounded-lg shadow-lg">
-                          <h2 className="text-h2">
+                        <div className="h-full min-h-52 md:min-h-[33svh] w-full flex items-center justify-center bg-foreground rounded-lg shadow-lg">
+                          <h2 className="text-background text-h2">
                             Coming Soon<span className="text-brand">.</span>
                           </h2>
                         </div>

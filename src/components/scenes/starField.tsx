@@ -4,8 +4,8 @@ import * as THREE from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useIsDarkMode } from "@utils/hooks/useIsDarkMode";
 
-const DEFAULT_FIELD_ELEMENT_SIZE = 48;
-const NUMBER_OF_FIELD_ELEMENTS = 5000;
+const DEFAULT_FIELD_ELEMENT_SIZE = 36;
+const NUMBER_OF_FIELD_ELEMENTS = 8000;
 const RANDOM_FLOAT_SPREAD = 2000;
 
 function drawStar(context: CanvasRenderingContext2D, size: number, color: string) {
@@ -103,7 +103,7 @@ function StarFieldMesh({ dark }: { dark: boolean }) {
       <pointsMaterial
         attach="material"
         color="white"
-        size={3}
+        size={2}
         sizeAttenuation
         map={starTexture}
         alphaTest={0.5}

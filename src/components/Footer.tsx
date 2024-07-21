@@ -49,7 +49,7 @@ export function Footer() {
         className="absolute bottom-auto top-auto right-4 gap-2"
       >
         {LINKS[language].returnToTop}
-        <ArrowUp weight="bold" size={16} />
+        <ArrowUp weight="bold" className="animate-bounce" size={16} />
       </Button>
     </div>
   );
