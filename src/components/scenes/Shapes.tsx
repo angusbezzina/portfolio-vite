@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { useFrame, ThreeElements, Canvas } from "@react-three/fiber";
 
 const BRAND_COLOR = "#FB3F42";
-const SHADOW_COLOR = "#353839";
+const SHADOW_COLOR = "#0F172A";
 
 function CubeMesh(props: ThreeElements["mesh"]) {
   const meshRef = React.useRef<THREE.Mesh>(null!);

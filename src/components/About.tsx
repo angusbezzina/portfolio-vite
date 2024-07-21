@@ -15,7 +15,7 @@ export function About() {
   const skills = BIO[language].skills;
 
   return (
-    <div className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4">
+    <div className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4 text-foreground/80">
       <div className="w-full md:w-1/2 flex flex-col gap-3 p-4 md:p-8">
         <TorusKnot className="w-16 h-16 shrink-0" />
         <h3 className="text-brand text-h2">
@@ -25,7 +25,7 @@ export function About() {
         <h5 className="text-h3">
           {subtitleRest} <span className="italic text-brand font-normal">{subtitleKey}</span>
         </h5>
-        <p className="text-foreground/80 leading-8">{text}</p>
+        <p className="leading-8">{text}</p>
       </div>
       {skills && (
         <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-4 md:p-16">
