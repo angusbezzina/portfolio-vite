@@ -1,6 +1,4 @@
-import { Flask } from "@phosphor-icons/react";
-
-import { buttonVariants } from "@components/ui/button";
+import { Cylinder } from "@components/scenes";
 import { Carousel, CarouselContent, CarouselItem } from "@components/ui/carousel";
 import { useLanguage } from "@context/language";
 import { EXPERIMENTS } from "@data/information";
@@ -15,7 +13,7 @@ export function Experiments() {
   return (
     <div className="relative w-full md:h-full flex flex-col items-start justify-center gap-8 text-foreground/80">
       <div className="flex flex-col gap-3 p-4 md:p-8">
-        <Flask size={64} />
+        <Cylinder className="h-16 w-16 shrink-0" />
         <h3 className="text-h2">
           {title}
           <span className="text-brand">.</span>
@@ -66,12 +64,7 @@ export function Experiments() {
                         </span>
                       </p>
                       <p className="text-foreground/80 leading-8">{description}</p>
-                      <a
-                        href={url}
-                        className={buttonVariants()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a href={url} className="link" target="_blank" rel="noopener noreferrer">
                         {language === "english" ? "See the project" : "Ver el proyecto"}
                       </a>
                     </div>

@@ -1,10 +1,9 @@
-import { Briefcase } from "@phosphor-icons/react";
-
 import { buttonVariants } from "@components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@components/ui/carousel";
 import { useLanguage } from "@context/language";
 import { PROJECTS } from "@data/information";
 import { separateFirst } from "@utils/words";
+import { Cube } from "@components/scenes";
 
 export function Projects() {
   const languageState = useLanguage();
@@ -15,7 +14,7 @@ export function Projects() {
   return (
     <div className="relative w-full md:h-full flex flex-col items-start justify-center gap-8 text-foreground/80">
       <div className="flex flex-col gap-3 p-4 md:p-8">
-        <Briefcase size={64} />
+        <Cube className="w-16 h-16 shrink-0" />
         <h3 className="text-h2">
           {title}
           <span className="text-brand">.</span>

@@ -35,7 +35,7 @@ export function Header({}: HeaderProps) {
           <DropdownMenuTrigger asChild>
             <Button>{language === "spanish" ? "🇪🇸" : "🇺🇸"}</Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
+          <DropdownMenuContent align="end">
             <DropdownMenuItem
               className="gap-2 cursor-pointer font-semibold"
               onClick={() => setLanguage("spanish")}

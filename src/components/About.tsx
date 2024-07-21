@@ -1,8 +1,7 @@
-import { Sparkle } from "@phosphor-icons/react";
-
 import { useLanguage } from "@context/language";
 import { BIO } from "@data/information";
 import { separateLast } from "@utils/words";
+import { TorusKnot } from "@components/scenes";
 
 export function About() {
   const {
@@ -18,7 +17,7 @@ export function About() {
   return (
     <div className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4">
       <div className="w-full md:w-1/2 flex flex-col gap-3 p-4 md:p-8">
-        <Sparkle size={64} />
+        <TorusKnot className="w-16 h-16 shrink-0" />
         <h3 className="text-brand text-h2">
           {title}
           <span className="text-foreground">.</span>

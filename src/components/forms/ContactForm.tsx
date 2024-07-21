@@ -117,8 +117,13 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button disabled={!isValid || !isDirty} type="submit">
+        <Button
+          disabled={!isValid || !isDirty}
+          type="submit"
+          className="bg-brand font-bold hover:bg-primary group"
+        >
           {CONTACT_DETAILS[language].labels.submit}
+          <span className="text-primary group-hover:text-brand">.</span>
         </Button>
         {response && <p className="text-subtle">{response}</p>}
       </form>

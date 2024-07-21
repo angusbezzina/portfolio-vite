@@ -130,6 +130,31 @@
       --chart-5: 340 75% 55%;
     }
   }
+
+  .link {
+    @apply relative border-none outline-none bg-none text-primary font-bold transition-all;
+  }
+
+  .link span {
+    @apply text-brand transition-colors;
+  }
+
+  .link::after {
+    @apply absolute left-0 -bottom-0.5 h-0.5 w-full bg-primary origin-left scale-x-0 transition-all;
+    content: "";
+  }
+
+  .link:hover {
+    @apply cursor-pointer text-brand transition-colors;
+  }
+
+  .link:hover::after {
+    @apply origin-right scale-x-100 transition-all;
+  }
+
+  .link:hover span {
+    @apply text-primary transition-colors;
+  }
 }
 
 @layer base {

@@ -1,7 +1,7 @@
 import { ContactForm } from "@components/forms/ContactForm";
+import { Torus } from "@components/scenes";
 import { useLanguage } from "@context/language";
 import { CONTACT_DETAILS } from "@data/information";
-import { PaperPlaneTilt } from "@phosphor-icons/react";
 
 export function Contact() {
   const languageState = useLanguage();
@@ -15,7 +15,7 @@ export function Contact() {
     <div className="relative w-full h-full flex flex-col md:flex-row items-start justify-center gap-8 p-4 md:p-8 text-foreground/80">
       <div className="w-full md:w-5/12 flex flex-col gap-3">
         <div className="flex flex-col gap-3">
-          <PaperPlaneTilt size={64} />
+          <Torus className="h-16 w-16 shrink-0" />
           <h3 className="text-h2 text-brand">
             {title}
             <span className="text-foreground">.</span>
