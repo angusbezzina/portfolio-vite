@@ -3,9 +3,7 @@ import React from "react";
 
 import * as THREE from "three";
 import { useFrame, ThreeElements, Canvas } from "@react-three/fiber";
-
-const BRAND_COLOR = "#FB3F42";
-const SHADOW_COLOR = "#0F172A";
+import { BRAND_COLOR } from "@utils/constants";
 
 function CubeMesh(props: ThreeElements["mesh"]) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
@@ -20,8 +18,9 @@ function CubeMesh(props: ThreeElements["mesh"]) {
   );
 }
 
-function TorusKnotMesh(props: ThreeElements["mesh"]) {
+function TorusKnotMesh({ color, ...props }: ThreeElements["mesh"] & { color: string }) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
+  console.log("COLOR", color);
 
   useFrame((state, delta) => {
     meshRef.current.rotation.x += delta;
@@ -32,7 +31,7 @@ function TorusKnotMesh(props: ThreeElements["mesh"]) {
   return (
     <mesh {...props} ref={meshRef}>
       <torusKnotGeometry args={[1.5, 0.55, 100, 200]} />
-      <meshStandardMaterial color={SHADOW_COLOR} />
+      <meshStandardMaterial color={color} />
     </mesh>
   );
 }
@@ -52,7 +51,7 @@ function CylinderMesh(props: ThreeElements["mesh"]) {
   );
 }
 
-function TorusMesh(props: ThreeElements["mesh"]) {
+function TorusMesh({ color, ...props }: ThreeElements["mesh"] & { color: string }) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
 
   useFrame((state, delta) => {
@@ -62,7 +61,7 @@ function TorusMesh(props: ThreeElements["mesh"]) {
   return (
     <mesh {...props} ref={meshRef}>
       <torusGeometry args={[1.75, 0.65, 100, 200]} />
-      <meshStandardMaterial color={SHADOW_COLOR} />
+      <meshStandardMaterial color={color} />
     </mesh>
   );
 }
@@ -98,21 +97,21 @@ export function Cylinder({ className }: { className?: string }) {
   );
 }
 
-export function Torus({ className }: { className?: string }) {
+export function Torus({ color = "white", className }: { color: string; className?: string }) {
   return (
     <div className={className}>
       <ShapeCanvas>
-        <TorusMesh />
+        <TorusMesh color={color} />
       </ShapeCanvas>
     </div>
   );
 }
 
-export function TorusKnot({ className }: { className?: string }) {
+export function TorusKnot({ color = "white", className }: { color: string; className?: string }) {
   return (
     <div className={className}>
       <ShapeCanvas>
-        <TorusKnotMesh />
+        <TorusKnotMesh color={color} />
       </ShapeCanvas>
     </div>
   );

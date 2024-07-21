@@ -120,7 +120,7 @@ export function ContactForm() {
         <Button
           disabled={!isValid || !isDirty}
           type="submit"
-          className="bg-brand font-bold hover:bg-primary group"
+          className="bg-brand disabled:opacity-0 font-bold hover:bg-primary group transition-opacity"
         >
           {CONTACT_DETAILS[language].labels.submit}
           <span className="text-primary group-hover:text-brand">.</span>

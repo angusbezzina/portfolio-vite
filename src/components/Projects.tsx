@@ -12,7 +12,10 @@ export function Projects() {
   const caseStudies = PROJECTS.projects;
 
   return (
-    <div className="relative w-full md:h-full flex flex-col items-start justify-center text-foreground/80">
+    <div
+      id="projects"
+      className="relative w-full md:h-full flex flex-col items-start justify-center text-foreground/80"
+    >
       <div className="flex flex-col gap-3 p-4 md:p-8">
         <Cube className="w-16 h-16 shrink-0" />
         <h3 className="text-h2">

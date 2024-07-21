@@ -1,4 +1,5 @@
 import { Cylinder } from "@components/scenes";
+import { buttonVariants } from "@components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@components/ui/carousel";
 import { useLanguage } from "@context/language";
 import { EXPERIMENTS } from "@data/information";
@@ -11,7 +12,10 @@ export function Experiments() {
   const experiments = EXPERIMENTS.experimentList;
 
   return (
-    <div className="relative w-full md:h-full flex flex-col items-start justify-center text-foreground/80">
+    <div
+      id="experiments"
+      className="relative w-full md:h-full flex flex-col items-start justify-center text-foreground/80"
+    >
       <div className="flex flex-col gap-3 p-4 md:p-8">
         <Cylinder className="h-16 w-16 shrink-0" />
         <h3 className="text-h2">
@@ -64,7 +68,12 @@ export function Experiments() {
                         </span>
                       </p>
                       <p className="text-foreground/80 leading-8">{description}</p>
-                      <a href={url} className="link" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={url}
+                        className={buttonVariants()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {language === "english" ? "See the project" : "Ver el proyecto"}
                       </a>
                     </div>

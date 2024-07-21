@@ -264,6 +264,23 @@ export const EXPERIMENTS = {
   ],
 };
 
+export const LINKS = {
+  english: {
+    about: "About",
+    projects: "Projects",
+    experiments: "Experiments",
+    explore: "Explore",
+    returnToTop: "Return",
+  },
+  spanish: {
+    about: "Sobre mí",
+    projects: "Proyectos",
+    experiments: "Experimentos",
+    explore: "Explorar",
+    returnToTop: "Volver",
+  },
+};
+
 export const CONTACT_DETAILS = {
   english: {
     preTitle: "Want to work with me?",

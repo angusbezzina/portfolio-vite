@@ -7,3 +7,9 @@ export const ROUTES = {
   HOME: "/",
   PAGE_NOT_FOUND: "/page-not-found",
 };
+
+export const BRAND_COLOR = "#FB3F42";
+export const ALT_COLOR_LIGHT = "#0F172A";
+export const ALT_COLOR_DARK = "#F2F2F2";
+export const SUZI_MODEL =
+  "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/suzanne-high-poly/model.gltf";

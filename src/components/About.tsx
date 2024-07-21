@@ -2,8 +2,11 @@ import { useLanguage } from "@context/language";
 import { BIO } from "@data/information";
 import { separateLast } from "@utils/words";
 import { TorusKnot } from "@components/scenes";
+import { useIsDarkMode } from "@utils/hooks/useIsDarkMode";
+import { ALT_COLOR_DARK, ALT_COLOR_LIGHT } from "@utils/constants";
 
 export function About() {
+  const isDark = useIsDarkMode();
   const {
     state: { language },
   } = useLanguage();
@@ -15,9 +18,15 @@ export function About() {
   const skills = BIO[language].skills;
 
   return (
-    <div className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4 text-foreground/80">
+    <div
+      id="about"
+      className="w-full h-full flex flex-col md:flex-row items-center justify-start gap-4 text-foreground/80"
+    >
       <div className="w-full md:w-1/2 flex flex-col gap-3 p-4 md:p-8">
-        <TorusKnot className="w-16 h-16 shrink-0" />
+        <TorusKnot
+          color={isDark ? ALT_COLOR_DARK : ALT_COLOR_LIGHT}
+          className="w-16 h-16 shrink-0"
+        />
         <h3 className="text-brand text-h2">
           {title}
           <span className="text-foreground">.</span>
@@ -28,7 +37,7 @@ export function About() {
         <p className="leading-8">{text}</p>
       </div>
       {skills && (
-        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground p-4 md:p-16">
+        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground/90 p-4 md:p-16">
           {skills.map((skill) => (
             <div className="flex flex-col gap-2" key={skill.title}>
               <h4 className="text-large">{skill.title}</h4>
