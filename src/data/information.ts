@@ -7,11 +7,11 @@ import forewordBackgroundImage from "@images/foreword.png";
 
 export const WELCOME = {
   english: {
-    title: "Welcome",
+    title: "Hi, I'm Angus",
     thankyouText: "With special thanks to",
   },
   spanish: {
-    title: "Bienvenido",
+    title: "Hola, soy Angus",
     thankyouText: "Con agradecimiento especial",
   },
 };

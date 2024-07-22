@@ -1,8 +1,10 @@
+import { ArrowDown } from "@phosphor-icons/react";
+
+import { FloatingLaptop } from "@components/scenes";
 import { useLanguage } from "@context/language";
 import { LINKS, WELCOME } from "@data/information";
+import useScrollPosition from "@hooks/useScrollPosition";
 import { cn } from "@lib/utils";
-import { ArrowDown } from "@phosphor-icons/react";
-import useScrollPosition from "@utils/hooks/useScrollPosition";
 
 const HEADER_HEIGHT = 46;
 
@@ -21,10 +23,11 @@ export function Hero() {
   return (
     <div className="relative h-[100svh] w-full flex flex-row justify-center items-center p-4 md:p-8">
       <div className="w-full flex flex-col text-center justify-center items-center">
-        <h1 className="text-brand text-jumbo font-bold">
+        <h1 className="text-jumbo text-heading">
           {WELCOME[language].title}
-          <span className="text-foreground">.</span>
+          <span className="text-brand">.</span>
         </h1>
+        <FloatingLaptop />
       </div>
       <button
         type="button"
