@@ -269,14 +269,14 @@ export const LINKS = {
     about: "About",
     projects: "Projects",
     experiments: "Experiments",
-    explore: "Explore",
+    explore: "Learn more",
     returnToTop: "Return",
   },
   spanish: {
     about: "Sobre mí",
     projects: "Proyectos",
     experiments: "Experimentos",
-    explore: "Explorar",
+    explore: "Aprende más",
     returnToTop: "Volver",
   },
 };

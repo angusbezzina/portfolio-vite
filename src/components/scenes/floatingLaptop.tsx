@@ -91,12 +91,16 @@ function Model({ open, hinge, ...props }: ModelProps) {
   );
 }
 
-export function FloatingLaptop() {
+export function FloatingLaptop({ text }: { text: string }) {
   const [open, setOpen] = React.useState(true);
   const springProps = useSpring({ open: Number(open) });
 
   return (
-    <web.div className="w-full h-[50svh]">
+    <web.div className="w-full h-full max-h-[70svh] md:max-h-[100svh] md:pt-20 flex flex-col items-center justify-center">
+      <web.h1 className="text-xl md:text-jumbo text-heading mt-24">
+        {text}
+        <web.span className="text-brand">.</web.span>
+      </web.h1>
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <pointLight position={[10, 10, 10]} intensity={1.5} />
         <React.Suspense fallback={null}>
