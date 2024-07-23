@@ -32,6 +32,7 @@ export function ContactForm() {
     state: { language },
   } = useLanguage();
   const form = useForm<ContactFormFields>({
+    mode: "onSubmit",
     defaultValues: {
       name: "",
       email: "",
@@ -66,7 +67,7 @@ export function ContactForm() {
     <Form {...form}>
       <form
         noValidate
-        className="w-full flex flex-col gap-3"
+        className="w-full flex flex-col gap-3 text-foreground"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         <FormField
@@ -118,7 +119,7 @@ export function ContactForm() {
           )}
         />
         <Button
-          disabled={!isValid || !isDirty}
+          disabled={!isDirty}
           type="submit"
           className="bg-brand disabled:opacity-0 font-bold hover:bg-primary group transition-opacity"
         >

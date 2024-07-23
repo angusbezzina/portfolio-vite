@@ -22,7 +22,7 @@ export function Hero() {
 
   return (
     <div className="relative h-[100svh] w-full flex flex-row justify-center items-center">
-      <FloatingLaptop text={WELCOME[language].title} />
+      <FloatingLaptop text={WELCOME[language]} />
       <button
         type="button"
         onClick={handleScroll}

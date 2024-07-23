@@ -6,78 +6,81 @@ import portfolioBackgroundImage from "@images/portfolio.png";
 import forewordBackgroundImage from "@images/foreword.png";
 
 export const WELCOME = {
-  english: {
-    title: "Hi, I'm Angus",
-    thankyouText: "With special thanks to",
-  },
-  spanish: {
-    title: "Hola, soy Angus",
-    thankyouText: "Con agradecimiento especial",
-  },
+  english: "Hi, I'm Angus",
+  spanish: "Hola, soy Angus",
 };
+
 export const BIO = {
   english: {
     title: "About me",
     subtitle: "Hi, my name is Angus",
-    text: "I'm a software engineer with skills in React, NodeJS, Typescript, Python, PHP, HTML, CSS, AWS and Serverless amongst other things. I've created this site as a place where you can connect with me and explore my work and the projects I experiment with in my spare time. I hope you enjoy it!",
+    text: "I'm a software engineer and technical advisor specialising in building world-class websites and applications. \nWith a range of expertise across TypeScript, React, Next.js, Node, Python, Prisma & Postgres, a strong knowledge of serverless architecture including AWS & GCP and an aptitude for automation & CI/CD pipelines I excel at both creating game-changing software and solving high-level engineering problems. \nCheck out the content below to see some of the work I've been involved in lately.",
     skills: [
       {
         title: "Technical Skills",
         skillList: [
-          "JS/HTML/CSS",
-          "React",
           "Typescript",
-          "NodeJS",
-          "AWS",
-          "Serverless",
+          "React",
+          "Next.js",
+          "Node",
+          "JS/HTML/CSS",
           "Python",
-          "C",
-          "PHP",
+          "LangChain",
+          "AWS",
+          "GCP",
+          "Firebase",
+          "Prisma",
+          "Flutter",
         ],
       },
       {
         title: "Soft Skills",
         skillList: [
           "Critical thinking",
-          "Adaptability",
-          "Creativity",
-          "Verbal communication",
-          "Written communication",
           "Leadership",
-          "Punctuality",
+          "Attention to detail",
+          "Creativity",
+          "Collaboration",
+          "Communication",
+          "Adaptability",
+          "Time management",
         ],
       },
     ],
   },
   spanish: {
     title: "Sobre mí",
-    subtitle: "Hola, mi nombre es Angus",
-    text: "Soy un ingeniero de software con habilidades en React, NodeJS, Typescript, Python, PHP, HTML, CSS, AWS y Serverless, entre otras cosas. He creado este sitio como un lugar donde puedes conectarte conmigo y explorar mi trabajo y los proyectos con los que experimento en mi tiempo libre. ¡Espero que lo disfruten!",
+    subtitle: "Hola, me llamo Angus",
+    text: "Soy un ingeniero de software y asesor técnico especializado en la creación de sitios web y aplicaciones de clase mundial. \nCon una variedad de experiencia en TypeScript, React, Next.js, Node, Python, Prisma y Postgres, un sólido conocimiento de la arquitectura serverless incluyendo AWS y GCP, y una aptitud para la automatización y los pipelines de CI/CD, sobresalgo tanto en la creación de software innovador como en la resolución de problemas de ingeniería de alto nivel. \nEcha un vistazo al contenido a continuación para ver algunos de los trabajos en los que he estado involucrado últimamente.",
     skills: [
       {
         title: "Habilidades Técnicas",
         skillList: [
-          "JS/HTML/CSS",
-          "React",
           "Typescript",
-          "NodeJS",
-          "AWS",
-          "Serverless",
+          "React",
+          "Next.js",
+          "Node",
+          "JS/HTML/CSS",
           "Python",
-          "C",
-          "PHP",
+          "LangChain",
+          "AWS",
+          "GCP",
+          "Firebase",
+          "Prisma",
+          "Flutter",
         ],
       },
       {
-        title: "Habilidades blandas",
+        title: "Habilidades Blandas",
         skillList: [
           "Pensamiento crítico",
-          "Adaptabilidad",
-          "Creatividad",
-          "Comunicación verbal",
-          "Comunicación escrita",
           "Liderazgo",
-          "Puntualidad",
+          "Atención al detalle",
+          "Creatividad",
+          "Colaboración",
+          "Comunicación",
+          "Adaptabilidad",
+          "Gestión del tiempo",
         ],
       },
     ],
@@ -92,27 +95,99 @@ export const PROJECTS = {
     title: "Proyectos",
   },
   projects: [
+    // {
+    //   english: {
+    //     title: "sihabloespanol.com",
+    //     //   description:
+    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
+    //     //   date: "July, 2024",
+    //     // },
+    //     // spanish: {
+    //     //   title: "AngusBezzina.com",
+    //     //   description:
+    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
+    //     //   date: "Julio, 2024",
+    //     // },
+    //     // slug: "angusbezzina",
+    //     // url: "https://angusbezzina.com/",
+    //     // featureImageSrc: portfolioBackgroundImage,
+    //     // stack: {
+    //     //   backend: "AWS/Serverless, LangChain",
+    //     //   frontend: "Vite, Typescript, ThreeJS",
+    //     // },
+    //   },
+    // },
+    // {
+    //   english: {
+    //     title: "thelosthobbit.com",
+    //     //   description:
+    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
+    //     //   date: "July, 2024",
+    //     // },
+    //     // spanish: {
+    //     //   title: "AngusBezzina.com",
+    //     //   description:
+    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
+    //     //   date: "Julio, 2024",
+    //     // },
+    //     // slug: "angusbezzina",
+    //     // url: "https://angusbezzina.com/",
+    //     // featureImageSrc: portfolioBackgroundImage,
+    //     // stack: {
+    //     //   backend: "AWS/Serverless, LangChain",
+    //     //   frontend: "Vite, Typescript, ThreeJS",
+    //     // },
+    //   },
+    // },
+    // {
+    //   english: {
+    //     title: "dqueens.com",
+    //     //   description:
+    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
+    //     //   date: "July, 2024",
+    //     // },
+    //     // spanish: {
+    //     //   title: "AngusBezzina.com",
+    //     //   description:
+    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
+    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
+    //     //   date: "Julio, 2024",
+    //     // },
+    //     // slug: "angusbezzina",
+    //     // url: "https://angusbezzina.com/",
+    //     // featureImageSrc: portfolioBackgroundImage,
+    //     // stack: {
+    //     //   backend: "AWS/Serverless, LangChain",
+    //     //   frontend: "Vite, Typescript, ThreeJS",
+    //     // },
+    //   },
+    // },
     {
       english: {
         title: "AngusBezzina.com",
         description:
-          "Portfolio website built with React and Typescript. Utilises a simple contact form that is connected to AirTable with an AWS λ function.",
+          "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
         featureImageAlt: "AngusBezzina.com Screenshot",
-        date: "September, 2020",
+        date: "July, 2024",
       },
       spanish: {
         title: "AngusBezzina.com",
         description:
-          "Sitio web de la cartera construido con React y Typescript. Utiliza un formulario de contacto simple que está conectado a AirTable con una función AWS λ.",
+          "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
         featureImageAlt: "AngusBezzina.com Captura de pantalla",
-        date: "Septiembre, 2020",
+        date: "Julio, 2024",
       },
       slug: "angusbezzina",
       url: "https://angusbezzina.com/",
       featureImageSrc: portfolioBackgroundImage,
       stack: {
-        backend: "AWS/Serverless",
-        frontend: "React, Typescript",
+        backend: "AWS/Serverless, LangChain",
+        frontend: "Vite, Typescript, ThreeJS",
       },
     },
     {
@@ -194,6 +269,12 @@ export const EXPERIMENTS = {
     title: "Experimentos",
   },
   experimentList: [
+    // {
+    //   english: {
+    //     title: "PromptSavvy",
+    //   },
+    //   // TODO:
+    // },
     {
       english: {
         title: "YourWorkout.App",

@@ -14,7 +14,7 @@ export function Experiments() {
   return (
     <div
       id="experiments"
-      className="relative w-full md:h-full flex flex-col items-start justify-center text-foreground/80"
+      className="relative w-full md:h-full flex flex-col items-start justify-center"
     >
       <div className="flex flex-col gap-3 p-4 md:p-8">
         <Cylinder className="h-16 w-16 shrink-0" />

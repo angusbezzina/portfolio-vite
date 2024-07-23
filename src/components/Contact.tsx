@@ -16,7 +16,7 @@ export function Contact() {
   return (
     <div
       id="contact"
-      className="relative w-full h-full flex flex-col md:flex-row items-start justify-center gap-8 p-4 md:p-8 text-foreground/80"
+      className="relative w-full h-full flex flex-col md:flex-row items-start justify-center gap-8 p-4 md:p-8"
     >
       <div className="w-full md:w-5/12 flex flex-col gap-3">
         <div className="flex flex-col gap-3">
