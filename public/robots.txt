@@ -1,0 +1,20 @@
+# robots.txt file for example.com
+
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+# Allow specific user-agents to access the whole site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow specific user-agent
+User-agent: BadBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.angusbezzina.com/sitemap.xml

@@ -34,7 +34,11 @@ export function About() {
         <h5 className="text-h3">
           {subtitleRest} <span className="italic text-brand font-normal">{subtitleKey}</span>
         </h5>
-        <div className="leading-8">{text}</div>
+        <div className="leading-8 flex flex-col gap-1">
+          {text.split("\n").map((p, index) => (
+            <p key={index}>{p}</p>
+          ))}
+        </div>
       </div>
       {skills && (
         <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 text-background bg-foreground/90 p-4 md:p-16">

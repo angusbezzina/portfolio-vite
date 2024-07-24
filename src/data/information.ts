@@ -2,8 +2,11 @@ import oqpiBackgroundImage from "@images/oqpi.png";
 import yourWorkoutAppBackgroundImage from "@images/yourworkoutapp.png";
 import emetBackgroundImage from "@images/emetISLHD.png";
 import linmickBackgroundImage from "@images/linmickdistributors.png";
-import portfolioBackgroundImage from "@images/portfolio.png";
 import forewordBackgroundImage from "@images/foreword.png";
+import siHabloEspanolBackgroundImage from "@images/sihabloespanol.png";
+import dQueensBackgroundImage from "@images/dqueens.png";
+import alexanderBackgroundImage from "@images/alexanderbezzina.png";
+import portfolioBackgroundImage from "@images/portfolio.png";
 
 export const WELCOME = {
   english: "Hi, I'm Angus",
@@ -14,7 +17,7 @@ export const BIO = {
   english: {
     title: "About me",
     subtitle: "Hi, my name is Angus",
-    text: "I'm a software engineer and technical advisor specialising in building world-class websites and applications. \nWith a range of expertise across TypeScript, React, Next.js, Node, Python, Prisma & Postgres, a strong knowledge of serverless architecture including AWS & GCP and an aptitude for automation & CI/CD pipelines I excel at both creating game-changing software and solving high-level engineering problems. \nCheck out the content below to see some of the work I've been involved in lately.",
+    text: "I'm a software engineer and technical advisor specialising in building world-class websites and applications. \nWith a range of expertise across TypeScript, React, Next.js, Node, Python, Prisma & Postgres, a strong knowledge of serverless architecture like AWS & GCP and an aptitude for automation & CI/CD pipelines I excel at both creating game-changing software and solving high-level engineering problems. \nCheck out the content below to see some of the work I've been involved in lately.",
     skills: [
       {
         title: "Technical Skills",
@@ -23,6 +26,7 @@ export const BIO = {
           "React",
           "Next.js",
           "Node",
+          "GraphQL",
           "JS/HTML/CSS",
           "Python",
           "LangChain",
@@ -51,7 +55,7 @@ export const BIO = {
   spanish: {
     title: "Sobre mí",
     subtitle: "Hola, me llamo Angus",
-    text: "Soy un ingeniero de software y asesor técnico especializado en la creación de sitios web y aplicaciones de clase mundial. \nCon una variedad de experiencia en TypeScript, React, Next.js, Node, Python, Prisma y Postgres, un sólido conocimiento de la arquitectura serverless incluyendo AWS y GCP, y una aptitud para la automatización y los pipelines de CI/CD, sobresalgo tanto en la creación de software innovador como en la resolución de problemas de ingeniería de alto nivel. \nEcha un vistazo al contenido a continuación para ver algunos de los trabajos en los que he estado involucrado últimamente.",
+    text: "Soy un ingeniero de software y asesor técnico especializado en la creación de sitios web y aplicaciones de clase mundial. \nCon una variedad de experiencia en TypeScript, React, Next.js, Node, Python, Prisma y Postgres, un sólido conocimiento de la arquitectura serverless como AWS y GCP, y una aptitud para la automatización y los pipelines de CI/CD, sobresalgo tanto en la creación de software innovador como en la resolución de problemas de ingeniería de alto nivel. \nEcha un vistazo al contenido a continuación para ver algunos de los trabajos en los que he estado involucrado últimamente.",
     skills: [
       {
         title: "Habilidades Técnicas",
@@ -60,6 +64,7 @@ export const BIO = {
           "React",
           "Next.js",
           "Node",
+          "GraphQL",
           "JS/HTML/CSS",
           "Python",
           "LangChain",
@@ -95,78 +100,6 @@ export const PROJECTS = {
     title: "Proyectos",
   },
   projects: [
-    // {
-    //   english: {
-    //     title: "sihabloespanol.com",
-    //     //   description:
-    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
-    //     //   date: "July, 2024",
-    //     // },
-    //     // spanish: {
-    //     //   title: "AngusBezzina.com",
-    //     //   description:
-    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
-    //     //   date: "Julio, 2024",
-    //     // },
-    //     // slug: "angusbezzina",
-    //     // url: "https://angusbezzina.com/",
-    //     // featureImageSrc: portfolioBackgroundImage,
-    //     // stack: {
-    //     //   backend: "AWS/Serverless, LangChain",
-    //     //   frontend: "Vite, Typescript, ThreeJS",
-    //     // },
-    //   },
-    // },
-    // {
-    //   english: {
-    //     title: "thelosthobbit.com",
-    //     //   description:
-    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
-    //     //   date: "July, 2024",
-    //     // },
-    //     // spanish: {
-    //     //   title: "AngusBezzina.com",
-    //     //   description:
-    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
-    //     //   date: "Julio, 2024",
-    //     // },
-    //     // slug: "angusbezzina",
-    //     // url: "https://angusbezzina.com/",
-    //     // featureImageSrc: portfolioBackgroundImage,
-    //     // stack: {
-    //     //   backend: "AWS/Serverless, LangChain",
-    //     //   frontend: "Vite, Typescript, ThreeJS",
-    //     // },
-    //   },
-    // },
-    // {
-    //   english: {
-    //     title: "dqueens.com",
-    //     //   description:
-    //     //     "Portfolio website built with Typescript, Vite & ThreeJS. Utilises a simple contact form that is connected to AirTable with an AWS Lambda function and a simple LangGraph Agent that provides the engine for the chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Screenshot",
-    //     //   date: "July, 2024",
-    //     // },
-    //     // spanish: {
-    //     //   title: "AngusBezzina.com",
-    //     //   description:
-    //     //     "Sitio web de portafolio construido con Typescript, Vite y ThreeJS. Utiliza un formulario de contacto sencillo que está conectado a AirTable con una función Lambda de AWS y un agente LangGraph simple que proporciona el motor para el chatbot.",
-    //     //   featureImageAlt: "AngusBezzina.com Captura de pantalla",
-    //     //   date: "Julio, 2024",
-    //     // },
-    //     // slug: "angusbezzina",
-    //     // url: "https://angusbezzina.com/",
-    //     // featureImageSrc: portfolioBackgroundImage,
-    //     // stack: {
-    //     //   backend: "AWS/Serverless, LangChain",
-    //     //   frontend: "Vite, Typescript, ThreeJS",
-    //     // },
-    //   },
-    // },
     {
       english: {
         title: "AngusBezzina.com",
@@ -192,6 +125,74 @@ export const PROJECTS = {
     },
     {
       english: {
+        title: "TheLostHobbit.com",
+        description:
+          "Remix website documenting and tracking the journey of Alexander Bezzina as he ran across New Zealand raising money for an endangered species of bird.",
+        featureImageAlt: "TheLostHobbit.com Screenshot",
+        date: "April, 2023",
+      },
+      spanish: {
+        title: "TheLostHobbit.com",
+        description:
+          "Sitio web Remix que documenta y sigue el viaje de Alexander Bezzina mientras corría por Nueva Zelanda recaudando dinero para una especie de ave en peligro de extinción.",
+        featureImageAlt: "TheLostHobbit.com Captura de pantalla",
+        date: "Abril, 2023",
+      },
+      slug: "thelosthobbit",
+      url: "https://thelosthobbit.com/",
+      stack: {
+        backend: "Strapi, Neon",
+        frontend: "Remix, Typescript, Tailwind",
+      },
+    },
+    {
+      english: {
+        title: "SiHabloEspanol.com",
+        description:
+          "Website for a Spanish tutor complete with integrations to manage bookings, payments and a basic Strapi CMS.",
+        featureImageAlt: "SiHabloEspanol.com Screenshot",
+        date: "December, 2021",
+      },
+      spanish: {
+        title: "SiHabloEspanol.com",
+        description:
+          "Sitio web para un tutor de español completo con integraciones para gestionar reservas, pagos y un CMS básico de Strapi.",
+        featureImageAlt: "SiHabloEspanol.com Captura de pantalla",
+        date: "Diciembre, 2024",
+      },
+      slug: "sihabloespanol",
+      url: "https://sihabloespanol.com/",
+      featureImageSrc: siHabloEspanolBackgroundImage,
+      stack: {
+        backend: "Strapi, Neon",
+        frontend: "NextJS, Typescript, Tailwind",
+      },
+    },
+    {
+      english: {
+        title: "dqueens.com.mx",
+        description:
+          "Website for a beauty parlour in Mexico complete with a blog, full internationalization and Strapi CMS.",
+        featureImageAlt: "D'Queens Screenshot",
+        date: "February, 2022",
+      },
+      spanish: {
+        title: "dqueens.com.mx",
+        description:
+          "Sitio web para un salón de belleza en México completo con un blog, internacionalización completa y un CMS de Strapi.",
+        featureImageAlt: "D'Queens Captura de pantalla",
+        date: "Febrero, 2022",
+      },
+      slug: "dqueens",
+      url: "https://dqueens.com.mx/",
+      featureImageSrc: dQueensBackgroundImage,
+      stack: {
+        backend: "Neon, Strapi",
+        frontend: "Next.js, Typescript, Tailwind",
+      },
+    },
+    {
+      english: {
         title: "AlexanderBezzina.com",
         description:
           "Portfolio website with attached photography store built with NextJS/React, Typescript, GraphQL, KeystoneJS and MongoDB.",
@@ -206,7 +207,8 @@ export const PROJECTS = {
         date: "Abril, 2021 (actualmente en desarrollo)",
       },
       slug: "alexanderbezzina",
-      url: "",
+      url: "https://alexanderbezzina.com/",
+      featureImageSrc: alexanderBackgroundImage,
       stack: {
         backend: "MongoDB, GraphQL, KeystoneJS",
         frontend: "React, NextJS, Typescript, Apollo",
@@ -227,7 +229,7 @@ export const PROJECTS = {
         featureImageAlt: "EMET-ISLHD Captura de pantalla",
         date: "Enero, 2019",
       },
-      slug: "emet-islhd",
+      slug: "emetislhd",
       url: "https://emet-islhd.blog",
       featureImageSrc: emetBackgroundImage,
       stack: {
@@ -269,12 +271,28 @@ export const EXPERIMENTS = {
     title: "Experimentos",
   },
   experimentList: [
-    // {
-    //   english: {
-    //     title: "PromptSavvy",
-    //   },
-    //   // TODO:
-    // },
+    {
+      english: {
+        title: "PromptSavvy",
+        description:
+          "Platform and Chrome extension that enables Creators to market and sell AI Prompts.",
+        featureImageAlt: "PromptSavvy screenshot",
+        date: "In Development",
+      },
+      spanish: {
+        title: "PromptSavvy",
+        description:
+          "Plataforma y extensión de Chrome que permite a los creadores comercializar y vender prompts de IA.",
+        featureImageAlt: "PromptSavvy Captura de pantalla",
+        date: "Actualmente en desarrollo",
+      },
+      slug: "promptsavvy",
+      url: "https://yourworkout.app/",
+      stack: {
+        backend: "MongoDB, Node",
+        frontend: "React, Vite, Tailwind",
+      },
+    },
     {
       english: {
         title: "YourWorkout.App",
@@ -289,7 +307,7 @@ export const EXPERIMENTS = {
         featureImageAlt: "Your Workout App Captura de pantalla",
         date: "Septiembre, 2019",
       },
-      slug: "your-workout-app",
+      slug: "yourworkoutapp",
       url: "https://yourworkout.app/",
       featureImageSrc: yourWorkoutAppBackgroundImage,
       stack: {
