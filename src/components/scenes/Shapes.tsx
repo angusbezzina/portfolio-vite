@@ -8,7 +8,7 @@ import { BRAND_COLOR } from "@utils/constants";
 function CubeMesh(props: ThreeElements["mesh"]) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
 
-  useFrame((state, delta) => (meshRef.current.rotation.x += delta));
+  useFrame((_state, delta) => (meshRef.current.rotation.x += delta));
 
   return (
     <mesh {...props} ref={meshRef}>
@@ -22,7 +22,7 @@ function TorusKnotMesh({ color, ...props }: ThreeElements["mesh"] & { color: str
   const meshRef = React.useRef<THREE.Mesh>(null!);
   console.log("COLOR", color);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     meshRef.current.rotation.x += delta;
     meshRef.current.rotation.y += delta;
     meshRef.current.rotation.z += delta;
@@ -39,7 +39,7 @@ function TorusKnotMesh({ color, ...props }: ThreeElements["mesh"] & { color: str
 function CylinderMesh(props: ThreeElements["mesh"]) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     meshRef.current.rotation.x += delta;
   });
 
@@ -54,7 +54,7 @@ function CylinderMesh(props: ThreeElements["mesh"]) {
 function TorusMesh({ color, ...props }: ThreeElements["mesh"] & { color: string }) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     meshRef.current.rotation.y += delta;
   });
 

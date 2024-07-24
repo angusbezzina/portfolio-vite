@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "transfer": "aws s3 sync build/ s3://angusbezzina.com",
+    "transfer": "aws s3 sync dist/ s3://angusbezzina.com",
     "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E2F88TMOM7YUVT --paths '/*'",
     "deploy": "npm run transfer && npm run invalidate-cache"
   },

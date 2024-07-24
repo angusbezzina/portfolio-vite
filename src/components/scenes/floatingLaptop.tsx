@@ -51,7 +51,7 @@ function Model({ open, hinge, ...props }: ModelProps) {
       ref={group}
       {...props}
       onPointerOver={(e) => (e.stopPropagation(), setHovered(true))}
-      onPointerOut={(e) => setHovered(false)}
+      onPointerOut={(_event) => setHovered(false)}
       dispose={null}
     >
       <three.group rotation-x={hinge} position={[0, -0.04, 0.41]}>

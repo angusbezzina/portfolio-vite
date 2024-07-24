@@ -45,7 +45,7 @@ export function ContactForm() {
   const {
     reset,
     watch,
-    formState: { isValid, isDirty },
+    formState: { isDirty },
   } = form;
 
   const { name } = watch();
