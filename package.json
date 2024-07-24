@@ -12,7 +12,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "transfer": "aws s3 sync dist/ s3://angusbezzina.com",
-    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E2F88TMOM7YUVT --paths '/*'",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id EUWYLB5L8XEBM --paths '/*'",
     "deploy": "npm run transfer && npm run invalidate-cache"
   },
   "dependencies": {
