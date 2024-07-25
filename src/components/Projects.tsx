@@ -1,5 +1,11 @@
 import { buttonVariants } from "@components/ui/button";
-import { Carousel, CarouselContent, CarouselItem } from "@components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@components/ui/carousel";
 import { useLanguage } from "@context/language";
 import { PROJECTS } from "@data/information";
 import { separateFirst } from "@utils/words";
@@ -14,23 +20,29 @@ export function Projects() {
   return (
     <div
       id="projects"
-      className="relative w-full md:h-full flex flex-col items-start justify-center"
+      className="w-full max-w-full overflow-hidden md:h-full flex items-start justify-start"
     >
-      <div className="flex flex-col gap-3 p-4 md:p-8">
-        <Cube className="w-16 h-16 shrink-0" />
-        <h3 className="text-h2">
-          {title}
-          <span className="text-brand">.</span>
-        </h3>
-      </div>
-      <div className="w-full max-w-full overflow-hidden">
-        <Carousel
-          className="cursor-grab"
-          opts={{
-            loop: true,
-          }}
-        >
-          <CarouselContent>
+      <Carousel
+        className="w-full cursor-grab"
+        opts={{
+          loop: true,
+        }}
+      >
+        <div id="projects" className="w-full md:h-full flex flex-col items-start justify-center">
+          <div className="w-full flex justify-between items-end p-4 md:p-8">
+            <div className="w-full flex flex-col gap-3">
+              <Cube className="w-16 h-16 shrink-0" />
+              <h3 className="text-h2">
+                {title}
+                <span className="text-brand">.</span>
+              </h3>
+            </div>
+            <div className="w-auto flex items-stretch justify-start gap-2 z-30">
+              <CarouselPrevious variant="secondary" />
+              <CarouselNext variant="secondary" />
+            </div>
+          </div>
+          <CarouselContent className="w-full">
             {caseStudies.map((caseStudy) => {
               const {
                 featureImageSrc,
@@ -43,55 +55,56 @@ export function Projects() {
               const { first, remaining } = separateFirst(title);
 
               return (
-                <CarouselItem key={slug}>
-                  <div className="flex flex-col md:flex-row gap-8 items-center p-4 md:p-8">
-                    <div className="w-full md:w-1/2 gap-3 flex items-center justify-center">
-                      {featureImageSrc ? (
-                        <img
-                          src={featureImageSrc}
-                          alt={featureImageAlt}
-                          className="h-full w-full min-h-52 md:min-h-[33svh] xl:min-h-72 object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
-                        />
-                      ) : (
-                        <div className="flex justify-center items-center h-full w-full min-h-52 md:min-h-[33svh] xl:min-h-72 rounded-lg overflow-hidden shadow-lg bg-foreground">
-                          <h2 className="text-background text-h2">
-                            Coming Soon<span className="text-brand">.</span>
-                          </h2>
-                        </div>
-                      )}
-                    </div>
-                    <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-3">
-                      <h4 className="text-h4">
-                        <span className="text-brand italic font-normal">{first}</span> {remaining}
-                        <span className="text-brand">.</span>
-                      </h4>
-                      <p>
-                        {date}
-                        <span className="text-brand">.</span>
-                      </p>
-                      <p className="text-subtle">
-                        Stack:{" "}
-                        <span className="text-brand font-normal italic">
-                          {frontend} + {backend}
-                        </span>
-                      </p>
-                      <p className="text-foreground/80 leading-8">{description}</p>
-                      <a
-                        href={url}
-                        className={buttonVariants()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {language === "english" ? "See the project" : "Ver el proyecto"}
-                      </a>
-                    </div>
+                <CarouselItem
+                  key={slug}
+                  className="w-full h-full grid shrink-0 grid-cols-1 md:grid-cols-2 gap-4 items-center"
+                >
+                  <div className="w-full gap-3 flex items-center justify-center pl-4 md:pl-8">
+                    {featureImageSrc ? (
+                      <img
+                        src={featureImageSrc}
+                        alt={featureImageAlt}
+                        className="h-52 md:h-72 w-full object-cover object-top bg-white/80 rounded-lg overflow-hidden shadow-lg"
+                      />
+                    ) : (
+                      <div className="flex justify-center items-center w-full h-52 md:h-72 rounded-lg overflow-hidden shadow-lg bg-foreground">
+                        <h2 className="text-background text-h2">
+                          Coming Soon<span className="text-brand">.</span>
+                        </h2>
+                      </div>
+                    )}
+                  </div>
+                  <div className="w-full flex flex-col items-start justify-start gap-3 pl-4 md:pl-8">
+                    <h4 className="text-h4">
+                      <span className="text-brand italic font-normal">{first}</span> {remaining}
+                      <span className="text-brand">.</span>
+                    </h4>
+                    <p>
+                      {date}
+                      <span className="text-brand">.</span>
+                    </p>
+                    <p className="text-subtle">
+                      Stack:{" "}
+                      <span className="text-brand font-normal italic">
+                        {frontend} + {backend}
+                      </span>
+                    </p>
+                    <p className="text-foreground/80 leading-8">{description}</p>
+                    <a
+                      href={url}
+                      className={buttonVariants()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {language === "english" ? "See the project" : "Ver el proyecto"}
+                    </a>
                   </div>
                 </CarouselItem>
               );
             })}
           </CarouselContent>
-        </Carousel>
-      </div>
+        </div>
+      </Carousel>
     </div>
   );
 }

@@ -46,7 +46,7 @@ export function Footer() {
         variant="ghost"
         size="sm"
         onClick={handleScrollToTop}
-        className="absolute bottom-auto top-auto right-4 gap-2"
+        className="absolute bottom-auto top-auto right-2 md:right-4 gap-2"
       >
         {LINKS[language].returnToTop}
         <ArrowUp weight="bold" className="animate-bounce" size={16} />

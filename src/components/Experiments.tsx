@@ -1,6 +1,12 @@
 import { Cylinder } from "@components/scenes";
 import { buttonVariants } from "@components/ui/button";
-import { Carousel, CarouselContent, CarouselItem } from "@components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@components/ui/carousel";
 import { useLanguage } from "@context/language";
 import { EXPERIMENTS } from "@data/information";
 import { separateFirst } from "@utils/words";
@@ -16,20 +22,26 @@ export function Experiments() {
       id="experiments"
       className="relative w-full md:h-full flex flex-col items-start justify-center"
     >
-      <div className="flex flex-col gap-3 p-4 md:p-8">
-        <Cylinder className="h-16 w-16 shrink-0" />
-        <h3 className="text-h2">
-          {title}
-          <span className="text-brand">.</span>
-        </h3>
-      </div>
-      <div className="w-full max-w-full overflow-hidden">
-        <Carousel
-          className="cursor-grab"
-          opts={{
-            loop: true,
-          }}
-        >
+      <Carousel
+        className="w-full cursor-grab"
+        opts={{
+          loop: true,
+        }}
+      >
+        <div className="w-full flex justify-between items-end p-4 md:p-8">
+          <div className="flex flex-col gap-3">
+            <Cylinder className="h-16 w-16 shrink-0" />
+            <h3 className="text-h2">
+              {title}
+              <span className="text-brand">.</span>
+            </h3>
+          </div>
+          <div className="w-auto flex items-stretch justify-start gap-2 z-30">
+            <CarouselPrevious variant="secondary" />
+            <CarouselNext variant="secondary" />
+          </div>
+        </div>
+        <div className="w-full max-w-full overflow-hidden">
           <CarouselContent>
             {experiments.map((experiment) => {
               const {
@@ -43,62 +55,62 @@ export function Experiments() {
               const { first, remaining } = separateFirst(title);
 
               return (
-                <CarouselItem key={slug}>
-                  <div className="flex flex-col md:flex-row gap-8 items-center p-4 md:p-8">
-                    <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-3">
-                      <h4 className="text-h4">
-                        {remaining.length > 0 ? (
-                          <>
-                            <span className="text-brand italic font-normal">{first}</span>{" "}
-                            {remaining}
-                          </>
-                        ) : (
-                          first
-                        )}
-                        <span className="text-brand">.</span>
-                      </h4>
-                      <p>
-                        {date}
-                        <span className="text-brand">.</span>
-                      </p>
-                      <p className="text-subtle">
-                        Stack:{" "}
-                        <span className="text-brand font-normal italic">
-                          {frontend} + {backend}
-                        </span>
-                      </p>
-                      <p className="text-foreground/80 leading-8">{description}</p>
-                      <a
-                        href={url}
-                        className={buttonVariants()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {language === "english" ? "See the project" : "Ver el proyecto"}
-                      </a>
-                    </div>
-                    <div className="w-full md:w-1/2 gap-3 flex items-center justify-center">
-                      {featureImageSrc ? (
-                        <img
-                          src={featureImageSrc}
-                          alt={featureImageAlt}
-                          className="h-full min-h-52 md:min-h-[33svh] xl:min-h-72 w-full object-cover object-center bg-white/80 rounded-lg overflow-hidden shadow-lg"
-                        />
+                <CarouselItem
+                  key={slug}
+                  className="w-full h-full flex flex-col-reverse md:grid md:grid-cols-2 gap-4"
+                >
+                  <div className="w-full flex flex-col items-start justify-start gap-3 px-4 md:px-8">
+                    <h4 className="text-h4">
+                      {remaining.length > 0 ? (
+                        <>
+                          <span className="text-brand italic font-normal">{first}</span> {remaining}
+                        </>
                       ) : (
-                        <div className="h-full min-h-52 md:min-h-[33svh] xl:min-h-72 w-full flex items-center justify-center bg-foreground rounded-lg shadow-lg">
-                          <h2 className="text-background text-h2">
-                            Coming Soon<span className="text-brand">.</span>
-                          </h2>
-                        </div>
+                        first
                       )}
-                    </div>
+                      <span className="text-brand">.</span>
+                    </h4>
+                    <p>
+                      {date}
+                      <span className="text-brand">.</span>
+                    </p>
+                    <p className="text-subtle">
+                      Stack:{" "}
+                      <span className="text-brand font-normal italic">
+                        {frontend} + {backend}
+                      </span>
+                    </p>
+                    <p className="text-foreground/80 leading-8">{description}</p>
+                    <a
+                      href={url}
+                      className={buttonVariants()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {language === "english" ? "See the project" : "Ver el proyecto"}
+                    </a>
+                  </div>
+                  <div className="w-full gap-3 flex items-center justify-center px-4 md:px-8">
+                    {featureImageSrc ? (
+                      <img
+                        src={featureImageSrc}
+                        alt={featureImageAlt}
+                        className="h-52 md:h-72 w-full max-w-full object-cover object-top bg-white/80 rounded-lg overflow-hidden shadow-lg"
+                      />
+                    ) : (
+                      <div className="h-52 md:h-72 w-full flex items-center justify-center bg-foreground rounded-lg shadow-lg">
+                        <h2 className="text-background text-h2">
+                          Coming Soon<span className="text-brand">.</span>
+                        </h2>
+                      </div>
+                    )}
                   </div>
                 </CarouselItem>
               );
             })}
           </CarouselContent>
-        </Carousel>
-      </div>
+        </div>
+      </Carousel>
     </div>
   );
 }
