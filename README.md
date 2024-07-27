@@ -1,4 +1,4 @@
-# Angus Bezzina's Portfolio
+# Vite Portfolio
 
 This is my static portfolio website with a few bells & whistles to make my star shine a little brighter ✨.
 
