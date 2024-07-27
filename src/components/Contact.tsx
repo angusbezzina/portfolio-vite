@@ -51,7 +51,7 @@ export function Contact() {
         </div>
         <div className="flex flex-col gap-3 justify-start items-start">
           <h5 className="text-h4 text-brand">{CONTACT_DETAILS[language].download.title}</h5>
-          <Button variant="outline" onClick={handleDownloadPdf}>
+          <Button onClick={handleDownloadPdf}>
             {CONTACT_DETAILS[language].download.buttonText}
           </Button>
         </div>
