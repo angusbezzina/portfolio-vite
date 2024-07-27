@@ -8,8 +8,9 @@ Stack for this includes, but is not limited to:
 - React
 - Typescript
 - Tailwind CSS
-- LangChain
 - ThreeJS
+
+To see how the APIs are set up, checkout the Serverless backend repo [here](https://github.com/angusbezzina/portfolio-vite-backend).
 
 ## Getting setup
 
