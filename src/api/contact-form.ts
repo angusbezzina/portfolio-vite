@@ -1,4 +1,4 @@
-import { API_PROD_URI, API_DEV_URI, IS_PROD } from "@utils/constants";
+import { CONTACT_FORM_API } from "@utils/constants";
 
 export type ContactInquiry = {
   name: string;
@@ -7,12 +7,8 @@ export type ContactInquiry = {
   language: string;
 };
 
-function getApiUrl() {
-  return IS_PROD ? API_PROD_URI : API_DEV_URI;
-}
-
 export async function submitContactForm(data: ContactInquiry) {
-  const response = await fetch(getApiUrl(), {
+  const response = await fetch(CONTACT_FORM_API, {
     method: "POST",
     body: JSON.stringify(data),
     headers: {

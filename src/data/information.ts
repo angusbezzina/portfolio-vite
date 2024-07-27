@@ -392,6 +392,11 @@ export const CONTACT_DETAILS = {
       responseSuccess: `Thanks for your message {{name}}! I'll be in touch soon 😁`,
       responseFailure: `I'm sorry {{name}}, it looks like something has gone wrong 😔`,
     },
+    download: {
+      title: "Old School?",
+      buttonText: "Download my CV",
+      fileName: "angus-bezzina-cv-2024.pdf",
+    },
     placeholders: {
       name: "Jane Doe",
       email: "hi@jane.com",
@@ -409,12 +414,18 @@ export const CONTACT_DETAILS = {
       responseSuccess: `Gracias por tu mensaje {{name}}! Se responderé lo antes posible 😁`,
       responseFailure: `Lo siento {{name}}, parece como algo ha pasado malo 😔`,
     },
+    download: {
+      title: "¿Eres de la vieja escuela?",
+      buttonText: "Descarga mi CV",
+      fileName: "angus-bezzina-cv-2024.pdf",
+    },
     placeholders: {
       name: "Yessica Perez",
       email: "hola@yessica.com",
       message: "Hola, mi nombre es Yessica...",
     },
   },
+  cv: "angus-bezzina-cv-2024.pdf",
   email: "angusbezzina@gmail.com",
   phone: "+(1) 857 445 1198",
 };

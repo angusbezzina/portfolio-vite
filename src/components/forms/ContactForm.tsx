@@ -52,13 +52,12 @@ export function ContactForm() {
 
   async function onSubmit(values: ContactFormFields) {
     try {
-      console.log("VALUES", values);
-      reset();
       await submitContactForm(values);
+      reset();
 
       setResponse(CONTACT_DETAILS[language].labels.responseSuccess.replace("{{name}}", name));
     } catch (err) {
-      console.log(err);
+      console.error(err);
       setResponse(CONTACT_DETAILS[language].labels.responseFailure.replace("{{name}}", name));
     }
   }

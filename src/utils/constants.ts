@@ -1,7 +1,9 @@
-export const IS_PROD = process.env.NODE_ENV === "production";
-export const API_PROD_URI =
-  "https://0t1c6xtfhg.execute-api.ap-southeast-2.amazonaws.com/dev/createAirTableRecord";
-export const API_DEV_URI = "http://localhost:3000/dev/createAirTableRecord";
+export const IS_PROD = import.meta.env.PROD;
+export const API_PROD = import.meta.env.VITE_API_PROD || "";
+export const API_DEV = "/api";
+export const API_STEM = IS_PROD ? API_PROD : API_DEV;
+export const CONTACT_FORM_API = `${API_STEM}/airtable`;
+export const DOWNLOAD_URL_API = `${API_STEM}/download`;
 
 export const ROUTES = {
   HOME: "/",
@@ -11,5 +13,3 @@ export const ROUTES = {
 export const BRAND_COLOR = "#FB3F42";
 export const ALT_COLOR_LIGHT = "#0F172A";
 export const ALT_COLOR_DARK = "#F2F2F2";
-export const SUZI_MODEL =
-  "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/suzanne-high-poly/model.gltf";

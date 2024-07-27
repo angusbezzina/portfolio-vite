@@ -20,7 +20,6 @@ function CubeMesh(props: ThreeElements["mesh"]) {
 
 function TorusKnotMesh({ color, ...props }: ThreeElements["mesh"] & { color: string }) {
   const meshRef = React.useRef<THREE.Mesh>(null!);
-  console.log("COLOR", color);
 
   useFrame((_state, delta) => {
     meshRef.current.rotation.x += delta;
