@@ -32,7 +32,7 @@ export function ContactForm() {
     state: { language },
   } = useLanguage();
   const form = useForm<ContactFormFields>({
-    mode: "onSubmit",
+    mode: "onChange",
     defaultValues: {
       name: "",
       email: "",
@@ -47,6 +47,12 @@ export function ContactForm() {
     watch,
     formState: { isDirty },
   } = form;
+
+  React.useEffect(() => {
+    if (isDirty) {
+      setResponse("");
+    }
+  }, [isDirty]);
 
   const { name } = watch();
 
@@ -117,15 +123,16 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button
-          disabled={!isDirty}
-          type="submit"
-          className="bg-brand disabled:opacity-0 font-bold hover:bg-primary group transition-opacity"
-        >
-          {CONTACT_DETAILS[language].labels.submit}
-          <span className="text-primary group-hover:text-brand">.</span>
-        </Button>
-        {response && <p className="text-subtle">{response}</p>}
+        {isDirty && (
+          <Button
+            type="submit"
+            className="bg-brand font-bold hover:bg-primary group transition-opacity fade-in-5 fade-out-0"
+          >
+            {CONTACT_DETAILS[language].labels.submit}
+            <span className="text-primary group-hover:text-brand">.</span>
+          </Button>
+        )}
+        {response && <p className="text-lg text-brand">{response}</p>}
       </form>
     </Form>
   );

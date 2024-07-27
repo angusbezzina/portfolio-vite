@@ -390,7 +390,7 @@ export const CONTACT_DETAILS = {
       message: "Message",
       submit: "Send",
       responseSuccess: `Thanks for your message {{name}}! I'll be in touch soon 😁`,
-      responseFailure: `I'm sorry {{name}}, it looks like something has gone wrong 😔`,
+      responseFailure: `I'm sorry {{name}}. It looks like something has gone wrong 😔`,
     },
     download: {
       title: "Old School?",
@@ -412,7 +412,7 @@ export const CONTACT_DETAILS = {
       message: "Mensaje",
       submit: "Enviar",
       responseSuccess: `Gracias por tu mensaje {{name}}! Se responderé lo antes posible 😁`,
-      responseFailure: `Lo siento {{name}}, parece como algo ha pasado malo 😔`,
+      responseFailure: `Lo siento {{name}}. Parece como algo ha pasado malo 😔`,
     },
     download: {
       title: "¿Eres de la vieja escuela?",
