@@ -1,4 +1,4 @@
-# Angus Bezzina's Portfolio
+# Vite Portfolio
 
 This is my static portfolio website with a few bells & whistles to make my star shine a little brighter ✨.
 
@@ -9,6 +9,8 @@ Stack for this includes, but is not limited to:
 - Typescript
 - Tailwind CSS
 - ThreeJS
+
+To see how the APIs are set up, checkout the Serverless backend repo [here](https://github.com/angusbezzina/portfolio-vite-backend).
 
 ## Getting setup
 
