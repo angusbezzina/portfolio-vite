@@ -8,7 +8,6 @@ Stack for this includes, but is not limited to:
 - React
 - Typescript
 - Tailwind CSS
-- LangChain
 - ThreeJS
 
 ## Getting setup
@@ -32,3 +31,6 @@ This site is hosted on AWS. To deploy it you will need to make sure that you hav
 To configure, run the command `aws configure` and enter the Access Key ID and Secret Access Key associated with the `portfolio-deployment` IAM user in AWS.
 
 Once configured, you can run the command `npm run deploy` from the root directory to deploy the website. You will need to clear the terminal after the cache-invalidation runs.
+
+**NOTE:**
+If the website is not deploying the most recent version, make sure that `npm run build` completes correctly. There may be an error preventing upload of the most recent version of the website.
