@@ -97,7 +97,7 @@ export function FloatingLaptop({ text }: { text: string }) {
 
   return (
     <web.div className="w-full h-full max-h-[70svh] md:max-h-[100svh] md:pt-20 flex flex-col items-center justify-center">
-      <web.h1 className="text-xl md:text-jumbo text-heading mt-24">
+      <web.h1 className="text-lg md:text-jumbo text-heading mt-24">
         {text}
         <web.span className="text-brand">.</web.span>
       </web.h1>
