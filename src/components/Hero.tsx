@@ -12,7 +12,7 @@ export function Hero() {
   const {
     state: { language },
   } = useLanguage();
-  const scrollPosition = useScrollPosition();
+  const { scrollPosition } = useScrollPosition();
   function handleScroll() {
     window.scrollTo({
       top: window.innerHeight - HEADER_HEIGHT,

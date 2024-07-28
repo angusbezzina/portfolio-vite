@@ -13,7 +13,7 @@ import { LINKS } from "@data/information";
 interface HeaderProps {}
 
 export function Header({}: HeaderProps) {
-  const scrollPosition = useScrollPosition();
+  const { scrollPosition } = useScrollPosition();
   const {
     state: { language },
     setLanguage,

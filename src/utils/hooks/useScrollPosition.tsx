@@ -15,7 +15,7 @@ export function useScrollPosition() {
     };
   }, []);
 
-  return scrollPosition;
+  return { scrollPosition };
 }
 
 export default useScrollPosition;
