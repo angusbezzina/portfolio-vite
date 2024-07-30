@@ -10,6 +10,7 @@ import { useLanguage } from "@context/language";
 import { PROJECTS } from "@data/information";
 import { separateFirst } from "@utils/words";
 import { Cube } from "@components/scenes";
+import { GithubLogo, Globe } from "@phosphor-icons/react";
 
 export function Projects() {
   const languageState = useLanguage();
@@ -47,6 +48,7 @@ export function Projects() {
               const {
                 featureImageSrc,
                 url,
+                repoUrl,
                 slug,
                 stack: { frontend, backend },
               } = caseStudy;
@@ -57,7 +59,7 @@ export function Projects() {
               return (
                 <CarouselItem
                   key={slug}
-                  className="w-full h-full grid shrink-0 grid-cols-1 md:grid-cols-2 gap-4 items-center"
+                  className="w-full h-full grid shrink-0 grid-cols-1 md:grid-cols-2 md:items-center gap-4 items-center pb-4"
                 >
                   <div className="w-full gap-3 flex items-center justify-center pl-4 md:pl-8">
                     {featureImageSrc ? (
@@ -90,14 +92,30 @@ export function Projects() {
                       </span>
                     </p>
                     <p className="text-foreground/80 leading-8">{description}</p>
-                    <a
-                      href={url}
-                      className={buttonVariants()}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {language === "english" ? "See the project" : "Ver el proyecto"}
-                    </a>
+                    <div className="flex justify-start items-stretch gap-4">
+                      {url && (
+                        <a
+                          href={url}
+                          className={buttonVariants()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Globe size={16} className="mr-2" />
+                          {language === "english" ? "Project" : "Proyecto"}
+                        </a>
+                      )}
+                      {repoUrl && (
+                        <a
+                          href={repoUrl}
+                          className={buttonVariants({ variant: "secondary" })}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <GithubLogo size={16} className="mr-2" />
+                          {language === "english" ? "Repo" : "Repositorio"}
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </CarouselItem>
               );

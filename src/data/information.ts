@@ -7,6 +7,7 @@ import siHabloEspanolBackgroundImage from "@images/sihabloespanol.png";
 import dQueensBackgroundImage from "@images/dqueens.png";
 import alexanderBackgroundImage from "@images/alexanderbezzina.png";
 import portfolioBackgroundImage from "@images/portfolio.png";
+import theLostHobbitBackgroundImage from "@images/thelosthobbit.png";
 
 export const WELCOME = {
   english: "Hi, I'm Angus",
@@ -117,6 +118,7 @@ export const PROJECTS = {
       },
       slug: "angusbezzina",
       url: "https://angusbezzina.com/",
+      repoUrl: "https://github.com/angusbezzina/portfolio-vite",
       featureImageSrc: portfolioBackgroundImage,
       stack: {
         backend: "AWS/Serverless, LangChain",
@@ -139,7 +141,9 @@ export const PROJECTS = {
         date: "Abril, 2023",
       },
       slug: "thelosthobbit",
-      url: "https://thelosthobbit.com/",
+      featureImageSrc: theLostHobbitBackgroundImage,
+      // url: "https://thelosthobbit.com/",
+      repoUrl: "https://github.com/angusbezzina/alexander-run",
       stack: {
         backend: "Strapi, Neon",
         frontend: "Remix, Typescript, Tailwind",
@@ -161,7 +165,8 @@ export const PROJECTS = {
         date: "Diciembre, 2024",
       },
       slug: "sihabloespanol",
-      url: "https://sihabloespanol.com/",
+      repoUrl: "https://github.com/angusbezzina/nathalie-salas-frontend",
+      // url: "https://sihabloespanol.com/",
       featureImageSrc: siHabloEspanolBackgroundImage,
       stack: {
         backend: "Strapi, Neon",
@@ -184,7 +189,8 @@ export const PROJECTS = {
         date: "Febrero, 2022",
       },
       slug: "dqueens",
-      url: "https://dqueens.com.mx/",
+      repoUrl: "https://github.com/angusbezzina/dqueens",
+      // url: "https://dqueens.com.mx/",
       featureImageSrc: dQueensBackgroundImage,
       stack: {
         backend: "Neon, Strapi",
@@ -208,6 +214,7 @@ export const PROJECTS = {
       },
       slug: "alexanderbezzina",
       url: "https://alexanderbezzina.com/",
+      repoUrl: "https://github.com/angusbezzina/alexanderbezzina-frontend",
       featureImageSrc: alexanderBackgroundImage,
       stack: {
         backend: "MongoDB, GraphQL, KeystoneJS",
@@ -231,6 +238,7 @@ export const PROJECTS = {
       },
       slug: "emetislhd",
       url: "https://emet-islhd.blog",
+      repoUrl: "https://github.com/angusbezzina/emet-islhd",
       featureImageSrc: emetBackgroundImage,
       stack: {
         backend: "Wordpress",
@@ -287,7 +295,7 @@ export const EXPERIMENTS = {
         date: "Actualmente en desarrollo",
       },
       slug: "promptsavvy",
-      url: "https://yourworkout.app/",
+      url: "https://www.promptsavvyapp.com/",
       stack: {
         backend: "MongoDB, Node",
         frontend: "React, Vite, Tailwind",
@@ -353,7 +361,8 @@ export const EXPERIMENTS = {
         date: "Enero, 2021",
       },
       slug: "foreword",
-      url: "https://foreword.world/",
+      repoUrl: "https://github.com/angusbezzina/foreword-signup",
+      // url: "https://foreword.world/",
       featureImageSrc: forewordBackgroundImage,
       stack: {
         backend: "AWS/Serverless",
