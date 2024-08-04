@@ -4,6 +4,7 @@ export const API_DEV = "/api";
 export const API_STEM = IS_PROD ? API_PROD : API_DEV;
 export const CONTACT_FORM_API = `${API_STEM}/airtable`;
 export const DOWNLOAD_URL_API = `${API_STEM}/download`;
+export const CHATBOT_API = `${API_STEM}/chatbot`;
 
 export const ROUTES = {
   HOME: "/",
