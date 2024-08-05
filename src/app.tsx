@@ -28,7 +28,7 @@ function App() {
             </div>
           </main>
         </div>
-        <ChatbotPopover className="z-40 self-end sticky bottom-4 mb-2 right-4 md:right-8 shrink-0 bg-foreground text-background rounded-lg shadow-lg flex items-center justify-center transition-all" />
+        <ChatbotPopover className="z-40 self-end sticky bottom-4 mb-2 right-4 md:right-8 shrink-0 bg-foreground text-background rounded-lg shadow-lg hidden md:flex items-center justify-center transition-all" />
         <Footer />
       </div>
     </Providers>
