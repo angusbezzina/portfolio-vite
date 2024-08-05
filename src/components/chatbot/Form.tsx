@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { PaperPlaneRight } from "@phosphor-icons/react";
 
 import { Form } from "@components/ui/form";
-import { Textarea } from "@components/ui/textarea";
 import { Button } from "@components/ui/button";
 import { ExpandableTextarea } from "@components/ui/expandable-textarea";
 
