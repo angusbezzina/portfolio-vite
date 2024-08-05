@@ -36,8 +36,8 @@ export default function ChatbotForm({ onSubmit }: ChatbotFormProps) {
   async function submit(data: ChatbotForm) {
     const { message } = data;
 
-    await onSubmit(message);
     reset();
+    await onSubmit(message);
   }
 
   return (
