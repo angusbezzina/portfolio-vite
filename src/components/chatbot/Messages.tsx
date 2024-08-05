@@ -2,6 +2,8 @@ import React from "react";
 
 import { cn } from "@lib/utils";
 import { Message } from "@components/chatbot/Popover";
+import { AI } from "@data/information";
+import { useLanguage } from "@context/language";
 
 type ChatbotMessagesProps = {
   loading: boolean;
@@ -19,6 +21,9 @@ function LoadingDots() {
 }
 
 export function ChatbotMessages({ loading, messages = [] }: ChatbotMessagesProps) {
+  const {
+    state: { language },
+  } = useLanguage();
   const messagesRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -34,7 +39,7 @@ export function ChatbotMessages({ loading, messages = [] }: ChatbotMessagesProps
       className="w-full flex flex-col gap-4 h-full max-h-64 overflow-y-auto pt-6 pb-4"
     >
       <div className="min-w-[55%] max-w-[80%] rounded-lg p-3 self-start bg-foreground text-background animate-fade-in">
-        Hey there 👋, how can I help?
+        {AI[language].intro}
       </div>
       {messages.map(({ type, message }, index) => (
         <div

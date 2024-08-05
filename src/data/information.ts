@@ -389,6 +389,15 @@ export const LINKS = {
   },
 };
 
+export const AI = {
+  english: {
+    intro: "Hey there 👋, how can I help?",
+  },
+  spanish: {
+    intro: "Hola 👋, ¿cómo puedo ayudarte?",
+  },
+};
+
 export const CONTACT_DETAILS = {
   english: {
     preTitle: "Want to work with me?",
