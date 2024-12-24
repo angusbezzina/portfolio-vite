@@ -8,6 +8,7 @@ import dQueensBackgroundImage from "@images/dqueens.png";
 import alexanderBackgroundImage from "@images/alexanderbezzina.png";
 import portfolioBackgroundImage from "@images/portfolio.png";
 import theLostHobbitBackgroundImage from "@images/thelosthobbit.png";
+import buyMeACoffeeBackgroundImage from "@images/buymeacoffee.png";
 
 export const WELCOME = {
   english: "Hi, I'm Angus",
@@ -279,6 +280,29 @@ export const EXPERIMENTS = {
     title: "Experimentos",
   },
   experimentList: [
+    {
+      english: {
+        title: "BuyMeACoffee",
+        description:
+          "Simple 'Buy Me A Coffee' smart contract that is written in Solidity and built with Hardhat.",
+        featureImageAlt: "BuyMeACoffee screenshot",
+        date: "November, 2024",
+      },
+      spanish: {
+        title: "BuyMeACoffee",
+        description:
+          "Contrato inteligente simple 'Buy Me A Coffee' que está escrito en Solidity y construido con Hardhat.",
+        featureImageAlt: "BuyMeACoffee Captura de pantalla",
+        date: "Noviembre, 2024",
+      },
+      featureImageSrc: buyMeACoffeeBackgroundImage,
+      slug: "buymeacoffee",
+      url: "https://buy-me-a-coffee-astro.vercel.app/",
+      stack: {
+        backend: "Solidity, Hardhat, Typescript",
+        frontend: "Astro, React, Typescript, Wagmi, Viem",
+      },
+    },
     {
       english: {
         title: "PromptSavvy",
