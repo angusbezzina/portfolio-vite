@@ -19,7 +19,7 @@ export const BIO = {
   english: {
     title: "About me",
     subtitle: "Hi, my name is Angus",
-    text: "I'm a software engineer and technical advisor specialising in building world-class websites and applications. \nWith a range of expertise across TypeScript, React, Next.js, Node, Python, Prisma & Postgres, a strong knowledge of serverless architecture like AWS & GCP and an aptitude for automation & CI/CD pipelines I excel at both creating game-changing software and solving high-level engineering problems. \nCheck out the content below to see some of the work I've been involved in lately.",
+    text: "I'm a software engineer driven by a passion for creating innovative websites and applications that make an impact.\nSkilled in TypeScript, React, Node.js, Python, LangChain, Prisma, and Postgres, I bring deep knowledge of cutting-edge AI tools, workflows, and serverless architectures (specializing in AWS and GCP).  \nI thrive at crafting world-class software solutions and tackling complex engineering challenges.\nExplore the content below to see some of my recent work.",
     skills: [
       {
         title: "Technical Skills",
@@ -57,7 +57,7 @@ export const BIO = {
   spanish: {
     title: "Sobre mí",
     subtitle: "Hola, me llamo Angus",
-    text: "Soy un ingeniero de software y asesor técnico especializado en la creación de sitios web y aplicaciones de clase mundial. \nCon una variedad de experiencia en TypeScript, React, Next.js, Node, Python, Prisma y Postgres, un sólido conocimiento de la arquitectura serverless como AWS y GCP, y una aptitud para la automatización y los pipelines de CI/CD, sobresalgo tanto en la creación de software innovador como en la resolución de problemas de ingeniería de alto nivel. \nEcha un vistazo al contenido a continuación para ver algunos de los trabajos en los que he estado involucrado últimamente.",
+    text: "Soy un ingeniero de software impulsado por la pasión de crear sitios web y aplicaciones innovadoras que tienen un impacto.\nCon habilidades en TypeScript, React, Node.js, Python, LangChain, Prisma y Postgres, poseo un profundo conocimiento de herramientas de IA de vanguardia, flujos de trabajo y arquitecturas serverless (especializándome en AWS y GCP). \nMe destaco en la creación de soluciones de software de clase mundial y en abordar desafíos complejos de ingeniería.\nExplora el contenido a continuación para ver algunos de mis trabajos recientes.",
     skills: [
       {
         title: "Habilidades Técnicas",
@@ -70,6 +70,7 @@ export const BIO = {
           "JS/HTML/CSS",
           "Python",
           "LangChain",
+
           "AWS",
           "GCP",
           "Firebase",
@@ -282,6 +283,51 @@ export const EXPERIMENTS = {
   experimentList: [
     {
       english: {
+        title: "Lucent",
+        description:
+          "Multiplatform service that allows users to fact-check and verify the authenticity of any type of media.",
+        featureImageAlt: "Lucent screenshot",
+        date: "In development",
+      },
+      spanish: {
+        title: "Lucent",
+        description:
+          "Servicio multiplataforma que permite a los usuarios verificar la autenticidad de cualquier tipo de medio.",
+        featureImageAlt: "Lucent Captura de pantalla",
+        date: "En desarrollo",
+      },
+      // featureImageSrc: lucentBackgroundImage,
+      slug: "lucent",
+      // url: "https://lucent.io/",
+      stack: {
+        backend: "Python, LangChain, Postgres, AWS",
+        frontend: "React, NextJS, Typescript",
+      },
+    },
+    {
+      english: {
+        title: "AgentX",
+        description:
+          "AI sales agent service that helps real estate agents, influencers and more to sell products and services.",
+        featureImageAlt: "AgentX screenshot",
+        date: "In Development",
+      },
+      spanish: {
+        title: "AgentX",
+        description:
+          "Servicio de agente de ventas de IA que ayuda a agentes de bienes raíces, influencers y más a vender productos y servicios.",
+        featureImageAlt: "AgentX Captura de pantalla",
+        date: "Actualmente en desarrollo",
+      },
+      slug: "agentx",
+      url: "https://www.myagentx.com/",
+      stack: {
+        backend: "Synthflow, NodeJS",
+        frontend: "React, NextJS, Tailwind",
+      },
+    },
+    {
+      english: {
         title: "BuyMeACoffee",
         description:
           "Simple 'Buy Me A Coffee' smart contract that is written in Solidity and built with Hardhat.",
@@ -301,28 +347,6 @@ export const EXPERIMENTS = {
       stack: {
         backend: "Solidity, Hardhat, Typescript",
         frontend: "Astro, React, Typescript, Wagmi, Viem",
-      },
-    },
-    {
-      english: {
-        title: "PromptSavvy",
-        description:
-          "Platform and Chrome extension that enables Creators to market and sell AI Prompts.",
-        featureImageAlt: "PromptSavvy screenshot",
-        date: "In Development",
-      },
-      spanish: {
-        title: "PromptSavvy",
-        description:
-          "Plataforma y extensión de Chrome que permite a los creadores comercializar y vender prompts de IA.",
-        featureImageAlt: "PromptSavvy Captura de pantalla",
-        date: "Actualmente en desarrollo",
-      },
-      slug: "promptsavvy",
-      url: "https://www.promptsavvyapp.com/",
-      stack: {
-        backend: "MongoDB, Node",
-        frontend: "React, Vite, Tailwind",
       },
     },
     {
@@ -437,7 +461,7 @@ export const CONTACT_DETAILS = {
     download: {
       title: "Old School?",
       buttonText: "Download my CV",
-      fileName: "angus-bezzina-cv-2024.pdf",
+      fileName: "angus-bezzina-cv-2025.pdf",
     },
     placeholders: {
       name: "Jane Doe",
@@ -459,7 +483,7 @@ export const CONTACT_DETAILS = {
     download: {
       title: "¿Eres de la vieja escuela?",
       buttonText: "Descarga mi CV",
-      fileName: "angus-bezzina-cv-2024.pdf",
+      fileName: "angus-bezzina-cv-2025.pdf",
     },
     placeholders: {
       name: "Yessica Perez",
@@ -467,9 +491,9 @@ export const CONTACT_DETAILS = {
       message: "Hola, mi nombre es Yessica...",
     },
   },
-  cv: "angus-bezzina-cv-2024.pdf",
+  cv: "angus-bezzina-cv-2025.pdf",
   email: "angusbezzina@gmail.com",
-  phone: "+(1) 857 445 1198",
+  phone: "+(57) 323 307 2539",
 };
 
 export const SOCIAL_DETAILS = {
