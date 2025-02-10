@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/angusbezzina
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://angusbezzina.com
+  * I am angusbezzina (https://keybase.io/angusbezzina) on keybase.
+  * I have a public key ASCVmfrkeKo36Q9UXQgLJkSMKkgCDtla0xtAHBLbLOd9Hwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209599fae478aa37e90f545d080b26448c2a48020ed95ad31b401c12db2ce77d1f0a",
+      "host": "keybase.io",
+      "kid": "01209599fae478aa37e90f545d080b26448c2a48020ed95ad31b401c12db2ce77d1f0a",
+      "uid": "b3240c01dbfadce5d455d0b377dffe19",
+      "username": "angusbezzina"
+    },
+    "merkle_root": {
+      "ctime": 1739159643,
+      "hash": "50b76eddcfc1b58bb07332f893ebbf6336f98d7e6de4c39758ccb952013ebc7b8512b9971f0766f8c4943e2aaa8bcd16e8687e1ed820043e15bd2a1a3e6b98a8",
+      "hash_meta": "a651355a5fd0e485462283bee24b171ef0ba168c7be740a0258e3af14c64f1f9",
+      "seqno": 26531871
+    },
+    "service": {
+      "entropy": "PskJMF8tdOvWBCP1c+9cHEyX",
+      "hostname": "angusbezzina.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.4.2"
+  },
+  "ctime": 1739159856,
+  "expire_in": 504576000,
+  "prev": "ebb1781ab676ffd3825a0176021772109c024f93972687af680998158348bad0",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEglZn65HiqN+kPVF0ICyZEjCpIAg7ZWtMbQBwS2yznfR8Kp3BheWxvYWTESpcCCcQg67F4GrZ2/9OCWgF2AhdyEJwCT5OXJoevaAmYFYNIutDEIBi+DGwb32iBJpxzK4LtauNEjSImE3Ug1E+Pxt0c+uC2AgHCo3NpZ8RAmdA2dAbHMlHkN5l8vIauDVvHcYs0GbKgUUwjfy1xBZ4VwMOUSppzmw4bFlN5X4ueanHapO5KQZ+/EnSEJirNBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMgVpZQ0C5NU8/bm3l4B7dkjYaQqMIHUgPlKveLFIXuco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/angusbezzina
+
+==================================================================
